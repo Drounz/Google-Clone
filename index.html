@@ -10,6 +10,7 @@
     <link rel="icon" href="./img/google.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="https://kit.fontawesome.com/efc28c27fc.js" crossorigin="anonymous"></script>
+    <script defer src="./main.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -23,10 +24,14 @@
                     <a class="link" href="">Images</a>
                 </li>
                 <li>
-                    <a class="menu-icon" href=""><i class="fa-solid fa-bars"></i></a>
+                    <div class="circle-shadow">
+                        <a class="menu-icon" href=""><i class="fa-solid fa-bars"></i></a>
+                    </div>
                 </li>
                 <li>
-                    <a class="user-icon" href=""><span>J</span></a>
+                    <div class="circle-shadow">
+                        <a class="user-icon" href=""><span>J</span></a>
+                    </div>
                 </li>
             </ul>
         </nav>
@@ -38,7 +43,7 @@
             <img class="logo-img" src="./img/google-logo.png" alt="Gooogle Logo Image">
             <div class="search-bar">
                 <i class="fas fa-search"></i>
-                <input type="text" class="search-input">
+                <input id="search-input" class="search-input" type="text">
                 <i class="fa-regular fa-keyboard"></i>
                 <i class="fas fa-microphone"></i>
             </div>
@@ -73,7 +78,7 @@
                     <a href="">How Search Works</a>
                 </li>
             </ul>
-            <ul>
+            <ul class="lower-right-footer">
                 <li>
                     <a href="">Privacy</a>
                 </li>
